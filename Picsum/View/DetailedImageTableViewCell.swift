@@ -28,8 +28,8 @@ class DetailedImageTableViewCell: UITableViewCell {
         button.translatesAutoresizingMaskIntoConstraints = false
         button.setTitle("Зберегти фото", for: .normal)
         button.titleLabel?.font = UIFont.preferredFont(forTextStyle: .body)
-        button.backgroundColor = UIColor.systemBlue.withAlphaComponent(0.1)
-        button.setTitleColor(.systemBlue, for: .normal)
+        button.backgroundColor = UIColor.gray.withAlphaComponent(0.5)
+        button.setTitleColor(.black, for: .normal)
         button.layer.cornerRadius = 8
         button.contentEdgeInsets = UIEdgeInsets(top: 10, left: 16, bottom: 10, right: 16)
         return button
@@ -56,7 +56,7 @@ class DetailedImageTableViewCell: UITableViewCell {
         contentView.addSubview(saveButton)
 
         let verticalPadding: CGFloat = 12
-        let horizontalPaddingForTitle: CGFloat = 16 
+        let horizontalPaddingForTitle: CGFloat = 16
         let spacingAfterTitle: CGFloat = 8
         let spacingAfterImage: CGFloat = 12
 
